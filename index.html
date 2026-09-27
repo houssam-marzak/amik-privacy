@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amik privacy policy</title>
+    <meta
+      name="description"
+      content="What Amik stores on your phone, and the one thing it ever sends."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --page: #f6f7f9;
+        --surface: #fdfdfe;
+        --ink: #16181d;
+        --ink-2: #585e69;
+        --hair: rgba(22, 24, 29, 0.1);
+        --accent: #1f63b8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --page: #121316;
+          --surface: #1a1c20;
+          --ink: #f2f3f5;
+          --ink-2: #a2a9b4;
+          --hair: rgba(242, 243, 245, 0.11);
+          --accent: #5d9eec;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.55;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 48px 24px 72px;
+      }
+      h1 {
+        font-size: 30px;
+        line-height: 1.14;
+        letter-spacing: -0.033em;
+        margin: 0;
+      }
+      h2 {
+        font-size: 19px;
+        letter-spacing: -0.022em;
+        margin: 40px 0 8px;
+      }
+      p,
+      ul {
+        margin: 12px 0;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .kicker,
+      .updated {
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+      .kicker {
+        margin: 0 0 6px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--hair);
+        border-radius: 16px;
+        padding: 16px 20px;
+        margin: 20px 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--hair);
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Amik</p>
+      <h1>Privacy policy</h1>
+      <p class="updated">Last updated 20 September 2026.</p>
+
+      <div class="card">
+        <p style="margin: 0">
+          Amik is an offline habit tracker with a private journal, published by Hym. It has no
+          account and no server. What you write stays on your phone. The one thing Amik ever sends
+          is a crash report, and a crash report carries nothing you wrote.
+        </p>
+      </div>
+
+      <h2>What Amik keeps, and where</h2>
+      <p>
+        Your habits and their schedules, whether each one was done, the daily totals, your goals,
+        your journal entries with their moods and answers, anything you have started writing and
+        not saved, and your settings are stored in a database inside the app on your phone.
+      </p>
+      <p>
+        They are not sent anywhere, and the developer has no way to read them. Removing Amik from
+        the phone deletes all of it.
+      </p>
+
+      <h2>What leaves your phone</h2>
+      <p>One thing: a crash report, sent when Amik crashes.</p>
+      <ul>
+        <li>
+          It goes to Sentry, a crash reporting service run by Functional Software, Inc., and is
+          stored in the European Union.
+        </li>
+        <li>
+          It carries the error and the place in Amik's own code where it happened, the version of
+          Amik, the phone's model and maker, the Android version, how much memory the phone has,
+          and the language and time zone the phone is set to.
+        </li>
+        <li>
+          It never carries a habit name, a journal answer, a mood, a draft, or anything else you
+          typed or chose. Amik rebuilds every report from a fixed list of fields before sending it,
+          leaving everything else out, and automated tests check this on every change to the app.
+        </li>
+        <li>Sentry is told not to store the network address the report was sent from.</li>
+        <li>Crash reports are deleted automatically after 90 days at most.</li>
+      </ul>
+      <p>
+        There is no advertising, no analytics, no tracking, no profile and no artificial
+        intelligence in Amik. It makes no other network request.
+      </p>
+
+      <h2>Android's own backup</h2>
+      <p>
+        If backup is switched on in your Android settings, Android may copy the data of the apps on
+        your phone, Amik included, into your Google account, as it does for other apps. That copy
+        is made by Android, governed by Google's terms and your device settings, and neither Amik
+        nor its developer can read it. You can switch it off in the phone's settings.
+      </p>
+
+      <h2>Your data stays yours</h2>
+      <p>
+        Nothing you record in Amik leaves the phone unless you send it somewhere yourself. Amik
+        asks for no personal information, no contacts, no location and no photos.
+      </p>
+
+      <h2>Children</h2>
+      <p>Amik is not directed at children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If the policy changes, this page changes with it, and the date at the top says when. A
+        change that affects what leaves your phone will be described here plainly.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy, or about a crash report:
+        <a href="mailto:privacy@amik.app">privacy@amik.app</a>.
+      </p>
+
+      <footer>Amik, com.hym.amik. Published by Hym.</footer>
+    </main>
+  </body>
+</html>
