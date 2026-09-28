@@ -8,6 +8,8 @@
       name="description"
       content="What Amik stores on your phone, and the one thing it ever sends."
     />
+    <link rel="alternate" hreflang="en" href="https://houssam-marzak.github.io/amik-privacy/" />
+    <link rel="alternate" hreflang="fr" href="https://houssam-marzak.github.io/amik-privacy/fr/" />
     <style>
       :root {
         color-scheme: light dark;
@@ -71,6 +73,10 @@
       }
       .kicker {
         margin: 0 0 6px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4px 16px;
       }
       .card {
         background: var(--surface);
@@ -93,9 +99,12 @@
   </head>
   <body>
     <main>
-      <p class="kicker">Amik</p>
+      <p class="kicker">
+        <span>Amik</span>
+        <a href="fr/" hreflang="fr" lang="fr">Lire en français</a>
+      </p>
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated 20 September 2026.</p>
+      <p class="updated">Last updated 28 September 2026.</p>
 
       <div class="card">
         <p style="margin: 0">
@@ -127,6 +136,12 @@
           It carries the error and the place in Amik's own code where it happened, the version of
           Amik, the phone's model and maker, the Android version, how much memory the phone has,
           and the language and time zone the phone is set to.
+        </li>
+        <li>
+          A crash caught by Android rather than by Amik's own code also carries an installation id:
+          a random value created the first time Amik runs, tied to no person, no account and no
+          other app. It only shows which reports came from the same phone, and removing Amik
+          deletes it.
         </li>
         <li>
           It never carries a habit name, a journal answer, a mood, a draft, or anything else you

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amik, politique de confidentialité</title>
+    <meta
+      name="description"
+      content="Ce qu’Amik garde sur ton téléphone, et la seule chose qu’il envoie."
+    />
+    <link rel="alternate" hreflang="en" href="https://houssam-marzak.github.io/amik-privacy/" />
+    <link rel="alternate" hreflang="fr" href="https://houssam-marzak.github.io/amik-privacy/fr/" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --page: #f6f7f9;
+        --surface: #fdfdfe;
+        --ink: #16181d;
+        --ink-2: #585e69;
+        --hair: rgba(22, 24, 29, 0.1);
+        --accent: #1f63b8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --page: #121316;
+          --surface: #1a1c20;
+          --ink: #f2f3f5;
+          --ink-2: #a2a9b4;
+          --hair: rgba(242, 243, 245, 0.11);
+          --accent: #5d9eec;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family:
+          ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        line-height: 1.55;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 48px 24px 72px;
+      }
+      h1 {
+        font-size: 30px;
+        line-height: 1.14;
+        letter-spacing: -0.033em;
+        margin: 0;
+      }
+      h2 {
+        font-size: 19px;
+        letter-spacing: -0.022em;
+        margin: 40px 0 8px;
+      }
+      p,
+      ul {
+        margin: 12px 0;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .kicker,
+      .updated {
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+      .kicker {
+        margin: 0 0 6px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4px 16px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--hair);
+        border-radius: 16px;
+        padding: 16px 20px;
+        margin: 20px 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--hair);
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">
+        <span>Amik</span>
+        <a href="../" hreflang="en" lang="en">Read in English</a>
+      </p>
+      <h1>Politique de confidentialité</h1>
+      <p class="updated">Dernière mise à jour le 28 septembre 2026.</p>
+
+      <div class="card">
+        <p style="margin: 0">
+          Amik est un suivi d’habitudes hors ligne, avec un journal privé, publié par Hym. Il n’a
+          ni compte ni serveur. Ce que tu écris reste sur ton téléphone. La seule chose qu’Amik
+          envoie, c’est un rapport de plantage, et un rapport de plantage ne contient rien de ce que
+          tu as écrit.
+        </p>
+      </div>
+
+      <h2>Ce qu’Amik garde, et où</h2>
+      <p>
+        Tes habitudes et leurs jours prévus, si chacune a été faite, les totaux de chaque journée,
+        tes objectifs, les entrées de ton journal avec leurs humeurs et leurs réponses, ce que tu as
+        commencé à écrire sans l’enregistrer, et tes réglages sont stockés dans une base de données,
+        dans l’application, sur ton téléphone.
+      </p>
+      <p>
+        Rien de tout cela n’est envoyé nulle part, et le développeur n’a aucun moyen de le lire.
+        Supprimer Amik du téléphone efface tout.
+      </p>
+
+      <h2>Ce qui quitte ton téléphone</h2>
+      <p>Une seule chose&nbsp;: un rapport de plantage, envoyé quand Amik plante.</p>
+      <ul>
+        <li>
+          Il part chez Sentry, un service de rapports de plantage géré par Functional Software,
+          Inc., et il est stocké dans l’Union européenne.
+        </li>
+        <li>
+          Il contient l’erreur et l’endroit du code d’Amik où elle s’est produite, la version
+          d’Amik, le modèle et la marque du téléphone, la version d’Android, la mémoire du
+          téléphone, ainsi que la langue et le fuseau horaire réglés sur le téléphone.
+        </li>
+        <li>
+          Un plantage détecté par Android plutôt que par le code d’Amik contient aussi un
+          identifiant d’installation&nbsp;: une valeur aléatoire créée au premier lancement d’Amik,
+          qui n’est liée à aucune personne, à aucun compte ni à aucune autre application. Il sert
+          seulement à savoir quels rapports viennent du même téléphone, et supprimer Amik l’efface.
+        </li>
+        <li>
+          Il ne contient jamais un nom d’habitude, une réponse du journal, une humeur, un brouillon,
+          ni rien d’autre que tu as tapé ou choisi. Amik reconstruit chaque rapport à partir d’une
+          liste fixe de champs avant de l’envoyer, en laissant tout le reste de côté, et des tests
+          automatiques le vérifient à chaque modification de l’application.
+        </li>
+        <li>
+          Sentry a pour consigne de ne pas conserver l’adresse réseau d’où le rapport a été envoyé.
+        </li>
+        <li>Les rapports de plantage sont supprimés automatiquement au bout de 90 jours au plus.</li>
+      </ul>
+      <p>
+        Il n’y a dans Amik ni publicité, ni statistiques d’usage, ni pistage, ni profil, ni
+        intelligence artificielle. Il ne fait aucune autre requête réseau.
+      </p>
+
+      <h2>La sauvegarde d’Android</h2>
+      <p>
+        Si la sauvegarde est activée dans les réglages d’Android, Android peut copier les données
+        des applications de ton téléphone, Amik compris, dans ton compte Google, comme il le fait
+        pour les autres applications. Cette copie est faite par Android, régie par les conditions
+        de Google et les réglages de ton appareil, et ni Amik ni son développeur ne peuvent la lire.
+        Tu peux la désactiver dans les réglages du téléphone.
+      </p>
+
+      <h2>Tes données restent à toi</h2>
+      <p>
+        Rien de ce que tu enregistres dans Amik ne quitte le téléphone, sauf si tu l’envoies
+        toi-même quelque part. Amik ne demande aucune information personnelle, aucun contact, aucune
+        position et aucune photo.
+      </p>
+
+      <h2>Enfants</h2>
+      <p>Amik ne s’adresse pas aux enfants.</p>
+
+      <h2>Modifications de cette politique</h2>
+      <p>
+        Si la politique change, cette page change avec elle, et la date en haut dit quand. Un
+        changement qui touche à ce qui quitte ton téléphone sera décrit ici clairement.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Pour une question sur cette politique ou sur un rapport de plantage&nbsp;:
+        <a href="mailto:privacy@amik.app">privacy@amik.app</a>.
+      </p>
+
+      <footer>Amik, com.hym.amik. Publié par Hym.</footer>
+    </main>
+  </body>
+</html>
