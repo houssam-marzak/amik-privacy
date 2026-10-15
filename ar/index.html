@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>سياسة الخصوصية في Amik</title>
+    <meta name="description" content="ما يحفظه Amik على هاتفك، والشيء الوحيد الذي يرسله." />
+    <link rel="alternate" hreflang="en" href="https://houssam-marzak.github.io/amik-privacy/" />
+    <link rel="alternate" hreflang="fr" href="https://houssam-marzak.github.io/amik-privacy/fr/" />
+    <link rel="alternate" hreflang="ar" href="https://houssam-marzak.github.io/amik-privacy/ar/" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --page: #f6f7f9;
+        --surface: #fdfdfe;
+        --ink: #16181d;
+        --ink-2: #585e69;
+        --hair: rgba(22, 24, 29, 0.1);
+        --accent: #1f63b8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --page: #121316;
+          --surface: #1a1c20;
+          --ink: #f2f3f5;
+          --ink-2: #a2a9b4;
+          --hair: rgba(242, 243, 245, 0.11);
+          --accent: #5d9eec;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--page);
+        color: var(--ink);
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-size: 17px;
+        line-height: 1.75;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 48px 24px 72px;
+      }
+      h1 {
+        font-size: 30px;
+        line-height: 1.4;
+        margin: 0;
+      }
+      h2 {
+        font-size: 19px;
+        line-height: 1.6;
+        margin: 40px 0 8px;
+      }
+      p,
+      ul {
+        margin: 12px 0;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .kicker,
+      .updated {
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+      .kicker {
+        margin: 0 0 6px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4px 16px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--hair);
+        border-radius: 16px;
+        padding: 16px 20px;
+        margin: 20px 0;
+      }
+      a {
+        color: var(--accent);
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--hair);
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">
+        <span>Amik</span>
+        <span>
+          <a href="../" hreflang="en" lang="en" dir="ltr">Read in English</a> ·
+          <a href="../fr/" hreflang="fr" lang="fr" dir="ltr">Lire en français</a>
+        </span>
+      </p>
+      <h1>سياسة الخصوصية</h1>
+      <p class="updated">آخر تحديث في 28 سبتمبر 2026.</p>
+
+      <div class="card">
+        <p style="margin: 0">
+          تطبيق Amik لمتابعة العادات دون إنترنت، مع يوميات خاصة، من نشر <bdi>Hym</bdi>. لا حساب فيه
+          ولا خادم. ما كتبته يبقى على هاتفك. الشيء الوحيد الذي يرسله Amik هو تقرير عطل، وتقرير العطل
+          لا يحمل شيئا مما كتبته.
+        </p>
+      </div>
+
+      <h2>ما يحفظه Amik، وأين</h2>
+      <p>
+        عاداتك وأيامها المقررة، وما أنجز منها، ومجموع كل يوم، وأهدافك، وتدويناتك في اليوميات بمزاجها
+        وأجوبتها، وما بدأت كتابته دون حفظ، وإعداداتك، كلها محفوظة في قاعدة بيانات داخل التطبيق، على
+        هاتفك.
+      </p>
+      <p>
+        لا يرسل شيء من ذلك إلى أي مكان، ولا سبيل للمطور إلى قراءته. حذف Amik من الهاتف يمحو ذلك كله.
+      </p>
+
+      <h2>ما يغادر هاتفك</h2>
+      <p>شيء واحد: تقرير عطل، يرسل حين يتعطل Amik.</p>
+      <ul>
+        <li>
+          يصل التقرير إلى <bdi>Sentry</bdi>، وهي خدمة لتقارير الأعطال تديرها شركة
+          <bdi>Functional Software, Inc.</bdi>، ويحفظ في الاتحاد الأوروبي.
+        </li>
+        <li>
+          يحمل الخطأ والموضع الذي وقع فيه من شيفرة Amik، وإصدار Amik، وطراز الهاتف وصانعه، وإصدار
+          Android، وحجم ذاكرة الهاتف، ولغة الهاتف ومنطقته الزمنية.
+        </li>
+        <li>
+          العطل الذي يلتقطه Android، لا شيفرة Amik، يحمل أيضا معرف تثبيت: قيمة عشوائية تنشأ عند
+          تشغيل Amik أول مرة، ولا ترتبط بأي شخص ولا بأي حساب ولا بأي تطبيق آخر. لا تفيد إلا في معرفة
+          التقارير التي جاءت من الهاتف نفسه، وحذف Amik يمحوها.
+        </li>
+        <li>
+          لا يحمل أبدا اسم عادة، ولا جوابا في اليوميات، ولا مزاجا، ولا مسودة، ولا أي شيء آخر كتبته
+          أو اخترته. يعيد Amik بناء كل تقرير من قائمة ثابتة من الحقول قبل إرساله، ويترك كل ما عداها،
+          وتتحقق اختبارات آلية من ذلك عند كل تغيير في التطبيق.
+        </li>
+        <li>طلب من <bdi>Sentry</bdi> ألا تحفظ عنوان الشبكة الذي أرسل منه التقرير.</li>
+        <li>تحذف تقارير الأعطال تلقائيا بعد 90 يوما على الأكثر.</li>
+      </ul>
+      <p>
+        لا إعلانات في Amik، ولا إحصاءات استخدام، ولا تتبع، ولا ملف شخصي، ولا ذكاء اصطناعي. ولا يرسل
+        أي طلب آخر عبر الشبكة.
+      </p>
+
+      <h2>النسخ الاحتياطي في Android</h2>
+      <p>
+        إن كان النسخ الاحتياطي مفعلا في إعدادات Android، فقد ينسخ Android بيانات التطبيقات التي على
+        هاتفك، ومنها Amik، إلى حسابك في Google، كما يفعل مع سائر التطبيقات. هذه النسخة يصنعها
+        Android، وتخضع لشروط Google ولإعدادات جهازك، ولا يستطيع Amik ولا مطوره قراءتها. يمكنك
+        إيقافها من إعدادات الهاتف.
+      </p>
+
+      <h2>بياناتك تبقى لك</h2>
+      <p>
+        لا يغادر الهاتف شيء مما سجلته في Amik، إلا إن أرسلته بنفسك إلى مكان ما. لا يطلب Amik أي
+        معلومات شخصية، ولا جهات اتصال، ولا موقعا، ولا صورا.
+      </p>
+
+      <h2>الأطفال</h2>
+      <p>تطبيق Amik ليس موجها إلى الأطفال.</p>
+
+      <h2>تغييرات هذه السياسة</h2>
+      <p>
+        إن تغيرت السياسة، تغيرت هذه الصفحة معها، والتاريخ في أعلاها يذكر متى. وأي تغيير يمس ما يغادر
+        هاتفك سيوصف هنا بوضوح.
+      </p>
+
+      <h2>التواصل</h2>
+      <p>
+        لسؤال عن هذه السياسة، أو عن تقرير عطل:
+        <a href="mailto:privacy@amik.app" dir="ltr">privacy@amik.app</a>.
+      </p>
+
+      <footer>تطبيق Amik، المعرف <bdi>com.hym.amik</bdi>. من نشر <bdi>Hym</bdi>.</footer>
+    </main>
+  </body>
+</html>
